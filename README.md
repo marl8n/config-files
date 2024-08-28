@@ -9,6 +9,14 @@ This guide will help you configure Neovim from scratch using `vim-plug`, with su
 - **vim-plug** installed (plugin manager for Neovim)
   - Installation: https://github.com/junegunn/vim-plug#installation
 
+## Step 0: Install vim-plug
+
+Run the following command to install `vim-plug`:
+
+```bash
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 ## Setup Instructions
 
 1. **Clone the configuration file:**

@@ -8,3 +8,7 @@ iterm2
 
 # MacOs ignores
 .DS_Store
+
+# Plug ignores
+nvim/plugged
+

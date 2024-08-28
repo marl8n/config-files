@@ -1,0 +1,10 @@
+configstore
+iterm
+yarn
+github-copilot
+simple-update-notifier
+zed
+iterm2
+
+# MacOs ignores
+.DS_Store

@@ -18,6 +18,9 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
+" Theme
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
 call plug#end()
 
 " Map <leader>nt to toggle NERDTree
@@ -100,3 +103,5 @@ set ignorecase            " Ignore case when searching
 set smartcase             " Override ignorecase if search contains capitals
 set clipboard=unnamedplus " Use system clipboard
 
+" Color scheme
+colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha

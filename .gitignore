@@ -12,3 +12,5 @@ iterm2
 # Plug ignores
 nvim/plugged
 
+# Installed pluggins
+nvim/plugin

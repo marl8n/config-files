@@ -19,9 +19,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- NERDTree
-  use 'preservim/nerdtree'
-
   -- LSP and Autocompletion
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'

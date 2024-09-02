@@ -19,6 +19,11 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- LSP and Autocompletion
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
@@ -27,6 +32,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+
+  -- Load custom configuration for plugin
+  require('plugins.telescope')
 
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then

@@ -28,8 +28,6 @@ return require('packer').startup(function(use)
       }
   }
 
-  use 'nvim-telescope/telescop-harpoon.nvim'
-
   -- LSP and Autocompletion
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'

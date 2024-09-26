@@ -17,6 +17,7 @@ local packer_bootstrap = ensure_packer()
 -- Plugin installation
 return require('packer').startup(function(use)
   -- Packer can manage itself
+  use 'ThePrimeagen/harpoon'
   use 'wbthomason/packer.nvim'
 
   use {
@@ -27,6 +28,8 @@ return require('packer').startup(function(use)
       }
   }
 
+  use 'nvim-telescope/telescop-harpoon.nvim'
+
   -- LSP and Autocompletion
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
@@ -35,6 +38,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+
+  -- Load custom configuration for plugin
+  require('plugins.harpoon')
 
   -- Load custom configuration for plugin
   require('plugins.telescope')

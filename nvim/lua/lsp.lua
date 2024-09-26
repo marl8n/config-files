@@ -18,7 +18,7 @@ end
 nvim_lsp.pyright.setup { on_attach = on_attach }
 
 -- TypeScript/JavaScript
-nvim_lsp.tsserver.setup { on_attach = on_attach }
+nvim_lsp.ts_ls.setup { on_attach = on_attach }
 
 -- Lua
 nvim_lsp.lua_ls.setup {

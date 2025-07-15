@@ -1,6 +1,7 @@
 -- lsp.lua
 
 local nvim_lsp = require('lspconfig')
+local cmp_nvim_lsp = require('cmp_nvim_lsp')
 
 local on_attach = function(_, bufnr)
   local opts = { noremap=true, silent=true }
@@ -14,15 +15,24 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+local capabilities = cmp_nvim_lsp.default_capabilities()
+
 -- Python
-nvim_lsp.pyright.setup { on_attach = on_attach }
+nvim_lsp.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 -- TypeScript/JavaScript
-nvim_lsp.ts_ls.setup { on_attach = on_attach }
+nvim_lsp.ts_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 -- Lua
 nvim_lsp.lua_ls.setup {
   on_attach = on_attach,
+  capabilities = capabilities,
   settings = {
     Lua = {
       diagnostics = { globals = { 'vim' } },

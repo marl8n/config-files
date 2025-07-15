@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
   -- Load custom configurations for plugins
   require('plugins.harpoon')
   require('plugins.telescope')
+  require('plugins.cmp')
 
   -- Automatically set up your configuration after cloning packer.nvim
   if packer_bootstrap then

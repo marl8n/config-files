@@ -8,6 +8,4 @@ require('mappings')
 
 -- Load plugins
 require('plugins')
-
--- Load LSP configurations
-require('lsp')
+require('plugins.lsp')

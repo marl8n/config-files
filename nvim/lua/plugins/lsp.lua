@@ -3,6 +3,15 @@ if not status then
   return
 end
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
+
+
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 
 local on_attach = function(client, bufnr)
